@@ -18,7 +18,6 @@ public class Exposer {
 
     private long end;
 
-
     public Exposer(boolean exposed, String md5, long seckillId) {
         this.exposed = exposed;
         this.md5 = md5;
@@ -84,5 +83,17 @@ public class Exposer {
 
     public void setEnd(long end) {
         this.end = end;
+    }
+
+    @Override
+    public String toString() {
+        return "Exposer{" +
+                " exposer=" + exposed +
+                " md5=" +  md5 +
+                " seckillId=" + seckillId +
+                " now=" + now +
+                " start=" + start +
+                " end=" + end +
+                "}";
     }
 }

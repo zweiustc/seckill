@@ -34,5 +34,6 @@ public enum SeckillStateEnum {
                 return state;
             }
         }
+        return null;
     }
 }
